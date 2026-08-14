@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Modelos | YES - Your Easy Site</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      box-shadow: none;
+    }
+    
+    .btn-outline:hover {
+      background-color: rgba(0, 229, 255, 0.1);
+      color: var(--accent);
+      box-shadow: 0 0 20px var(--accent-glow);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVEGAÇÃO -->
+  <nav class="navbar">
+   <div class="logo">
+  <span class="cyan">Y</span><span class="cyan">E</span><span class="cyan">S</span>
+</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Sobre Nós</a></li>
+      <li><a href="modelos.html" class="active">Modelos</a></li>
+      <li><a href="planos.html">Planos</a></li>
+    </ul>
+  </nav>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio">
+    <h2 class="section-title">Nossos <span>Modelos</span></h2>
+    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;">
+      Clique em "Ver Demonstração" para visualizar o site completo
+    </p>
+    <div class="grid">
+      
+      <!-- Card 1 - Salão de Beleza -->
+      <div class="card">
+        <div class="card-img">
+          <img src="img/preview-salao.jpg" alt="Preview Site de Beleza" style="width: 100%; height: 100%; object-fit: cover;">  
+          </div>
+        <div class="card-body">
+          <h3>Salão de Beleza</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+            Site elegante com agendamento online
+          </p>
+          <div class="card-buttons">
+            <a href="salao-beleza/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
+            <a href="planos.html" class="btn">💎 Ver Planos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 - Petshop -->
+      <div class="card">
+        <div class="card-img"><img src="img/preview-petshop.jpg" alt="Preview Petshop" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="card-body" >
+          <h3>Petshop</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+            Loja virtual com catálogo de produtos
+          </p>
+          <div class="card-buttons">
+            <a href="petshop/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
+            <a href="planos.html" class="btn">💎 Ver Planos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 - Dentista -->
+      <div class="card">
+        <div class="card-img"><img src="img/preview-dentista.jpg" alt="Preview Dentista" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="card-body">
+          <h3>Dentista</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+            Clínica odontológica com perfil profissional
+          </p>
+          <div class="card-buttons">
+            <a href="dentista/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
+            <a href="planos.html" class="btn">💎 Ver Planos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 - Advogado -->
+      <div class="card">
+        <div class="card-img"><img src="img/preview-advogado.jpg" alt="Preview Advogado" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="card-body">
+          <h3>Advogado</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+            Escritório de advocacia corporativa
+          </p>
+          <div class="card-buttons">
+            <a href="advogado/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
+            <a href="planos.html" class="btn">💎 Ver Planos</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="card">
+        <div class="card-img"><img src="img/preview-consultoria.jpg" alt="Preview Consultoria" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="card-body">
+          <h3>Consultoria</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+            Consultoria Fitness
+          </p>
+          <div class="card-buttons">
+            <a href="consultoria/index.html " target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
+            <a href="planos.html" class="btn">💎 Ver Planos</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="card">
+        <div class="card-img"><img src="img/preview-estetica.jpg" alt="Preview Estética" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="card-body">
+          <h3>Estética</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+            Estética Automotiva (Detaling)
+          </p>
+          <div class="card-buttons">
+            <a href="estetica/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
+            <a href="planos.html" class="btn">💎 Ver Planos</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-col">
+      <h4>YES - Your Easy Site</h4>
+      <p>Agência especializada em criação de sites modernos, responsivos e focados em conversão. Transformamos sua presença digital em resultados.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Links Rápidos</h4>
+      <ul>
+        <li><a href="index.html">Sobre Nós</a></li>
+        <li><a href="modelos.html">Modelos</a></li>
+        <li><a href="planos.html">Planos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li>📱 (11) 99478-2909 - Lucas Yohan</li>
+        <li>📱 (11) 99974-4554 - Davi Koseki</li>
+        <li>✉️ contato@yes.com.br</li>
+        <li>✉️ dados@yes.com.br</li>
+        <li>📍 São Paulo, SP</li>
+        <li>🕒 Seg a Sex, 9h às 18h</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span class="accent">YES - Your Easy Site</span>. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5511994782909?text=Olá!%20Gostaria%20de%20falar%20com%20a%20YES%20-%20Your%20Easy%20Site." 
+   class="floating-whatsapp" 
+   target="_blank" 
+   aria-label="Fale Conosco no WhatsApp">
+  💬
+</a>
+</body>
+</html>
