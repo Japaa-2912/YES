@@ -1,0 +1,87 @@
+servidor local em http://127.0.0.1:4731
+
+=== 1. Intro (sessionStorage) ===
+overlay pulado no reload: SIM
+sessionStorage 'yes_intro_seen': 1
+
+=== 2. Paginas principais ===
+
+[/index.html] desktop 1440px
+  console/network issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow horizontal: nao
+
+[/modelos.html] desktop 1440px
+  console/network issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow horizontal: nao
+
+[/planos.html] desktop 1440px
+  console/network issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow horizontal: nao
+
+=== 3. Responsivo mobile ===
+[/index.html] mobile 390px
+  issues: nenhum
+  overflow horizontal: nao
+[/modelos.html] mobile 390px
+  issues: nenhum
+  overflow horizontal: nao
+[/planos.html] mobile 390px
+  issues: nenhum
+  overflow horizontal: nao
+
+=== 4. Sites demo (rotas Vercel) ===
+[/salao-beleza/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+[/petshop/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+[/dentista/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+[/advogado/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+[/consultoria/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+[/estetica/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+[/autoescola/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+[/clinica-estetica/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+[/studio-de-cabelo/index.html]
+  issues: nenhum
+  imagens quebradas: nenhuma
+  links internos quebrados: nenhum
+  overflow 1440px: nao
+
+=== 5. Página 404 ===
+titulo: Página não encontrada | YES — Your Easy Site
+conteudo 404 exibido: SIM

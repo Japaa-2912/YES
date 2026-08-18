@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Capa do modelo AUTOESCOLA — YES">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#9fd69f" stop-opacity="0.16"/>
+      <stop offset="55%" stop-color="#9fd69f" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#9fd69f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10151a"/>
+      <stop offset="100%" stop-color="#0b0e11"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#base)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <rect x="40" y="40" width="1120" height="595" fill="none" stroke="#ffffff" stroke-opacity="0.07"/>
+  <rect x="41" y="41" width="1118" height="593" fill="none" stroke="#ffffff" stroke-opacity="0.03"/>
+  <path d="M40 88 V40 H88" fill="none" stroke="#9fd69f" stroke-opacity="0.75" stroke-width="2"/>
+  <path d="M1160 88 V40 H1112" fill="none" stroke="#9fd69f" stroke-opacity="0.75" stroke-width="2"/>
+  <path d="M40 587 V635 H88" fill="none" stroke="#9fd69f" stroke-opacity="0.75" stroke-width="2"/>
+  <path d="M1160 587 V635 H1112" fill="none" stroke="#9fd69f" stroke-opacity="0.75" stroke-width="2"/>
+  <text x="64" y="118" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="6" fill="#9aa6b0">YES · MODELO 07</text>
+  <text x="600" y="368" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="148" font-style="italic" fill="#f2f5f6">
+    <tspan>A</tspan><tspan fill="#9fd69f">·</tspan><tspan>E</tspan>
+  </text>
+  <line x1="566" y1="398" x2="634" y2="398" stroke="#9fd69f" stroke-opacity="0.65" stroke-width="1"/>
+  <text x="600" y="452" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" letter-spacing="8" fill="#e9edf0">AUTOESCOLA</text>
+  <text x="600" y="484" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="4" fill="#77828c">Formação de Condutores</text>
+  <text x="64" y="596" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3" fill="#55606a">YOUR EASY SITE</text>
+  <circle cx="1136" cy="596" r="3" fill="#9fd69f" fill-opacity="0.8"/>
+</svg>
