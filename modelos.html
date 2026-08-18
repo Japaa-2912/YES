@@ -3,181 +3,463 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio de Modelos | YES - Your Easy Site</title>
+  <meta name="description" content="Conheça os modelos de sites YES — Your Easy Site: Salão de Beleza, Petshop, Dentista, Advogado, Consultoria, Estética Automotiva, Autoescola, Clínica Estética e Studio de Cabelo.">
+  <meta name="theme-color" content="#0b0e11">
+  <title>Modelos | Portfólio — YES Your Easy Site</title>
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230b0e11"/><text x="32" y="45" font-family="Georgia,serif" font-size="38" font-style="italic" fill="%235fd4c6" text-anchor="middle">Y</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .card-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-    
-    .btn-outline {
-      background-color: transparent;
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      box-shadow: none;
-    }
-    
-    .btn-outline:hover {
-      background-color: rgba(0, 229, 255, 0.1);
-      color: var(--accent);
-      box-shadow: 0 0 20px var(--accent-glow);
-      transform: translateY(-3px);
-    }
-  </style>
 </head>
 <body>
-  <!-- NAVEGAÇÃO -->
-  <nav class="navbar">
-   <div class="logo">
-  <span class="cyan">Y</span><span class="cyan">E</span><span class="cyan">S</span>
-</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Sobre Nós</a></li>
-      <li><a href="modelos.html" class="active">Modelos</a></li>
-      <li><a href="planos.html">Planos</a></li>
-    </ul>
-  </nav>
 
-  <!-- PORTFOLIO -->
-  <section class="portfolio">
-    <h2 class="section-title">Nossos <span>Modelos</span></h2>
-    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;">
-      Clique em "Ver Demonstração" para visualizar o site completo
-    </p>
-    <div class="grid">
-      
-      <!-- Card 1 - Salão de Beleza -->
-      <div class="card">
-        <div class="card-img">
-          <img src="img/preview-salao.jpg" alt="Preview Site de Beleza" style="width: 100%; height: 100%; object-fit: cover;">  
-          </div>
-        <div class="card-body">
-          <h3>Salão de Beleza</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
-            Site elegante com agendamento online
-          </p>
-          <div class="card-buttons">
-            <a href="salao-beleza/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
-            <a href="planos.html" class="btn">💎 Ver Planos</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 - Petshop -->
-      <div class="card">
-        <div class="card-img"><img src="img/preview-petshop.jpg" alt="Preview Petshop" style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="card-body" >
-          <h3>Petshop</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
-            Loja virtual com catálogo de produtos
-          </p>
-          <div class="card-buttons">
-            <a href="petshop/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
-            <a href="planos.html" class="btn">💎 Ver Planos</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 - Dentista -->
-      <div class="card">
-        <div class="card-img"><img src="img/preview-dentista.jpg" alt="Preview Dentista" style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="card-body">
-          <h3>Dentista</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
-            Clínica odontológica com perfil profissional
-          </p>
-          <div class="card-buttons">
-            <a href="dentista/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
-            <a href="planos.html" class="btn">💎 Ver Planos</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 - Advogado -->
-      <div class="card">
-        <div class="card-img"><img src="img/preview-advogado.jpg" alt="Preview Advogado" style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="card-body">
-          <h3>Advogado</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
-            Escritório de advocacia corporativa
-          </p>
-          <div class="card-buttons">
-            <a href="advogado/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
-            <a href="planos.html" class="btn">💎 Ver Planos</a>
-          </div>
-        </div>
-      </div>
-
-       <div class="card">
-        <div class="card-img"><img src="img/preview-consultoria.jpg" alt="Preview Consultoria" style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="card-body">
-          <h3>Consultoria</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
-            Consultoria Fitness
-          </p>
-          <div class="card-buttons">
-            <a href="consultoria/index.html " target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
-            <a href="planos.html" class="btn">💎 Ver Planos</a>
-          </div>
-        </div>
-      </div>
-
-       <div class="card">
-        <div class="card-img"><img src="img/preview-estetica.jpg" alt="Preview Estética" style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="card-body">
-          <h3>Estética</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
-            Estética Automotiva (Detaling)
-          </p>
-          <div class="card-buttons">
-            <a href="estetica/index.html" target="_blank" class="btn btn-outline">👁 Ver Demonstração</a>
-            <a href="planos.html" class="btn">💎 Ver Planos</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-col">
-      <h4>YES - Your Easy Site</h4>
-      <p>Agência especializada em criação de sites modernos, responsivos e focados em conversão. Transformamos sua presença digital em resultados.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Links Rápidos</h4>
-      <ul>
+  <nav class="navbar" aria-label="Navegação principal">
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="YES — Your Easy Site">
+        <span class="logo-yes"><span>Y</span><span>E</span><span>S</span></span>
+        <span class="logo-sub">your easy site</span>
+      </a>
+      <ul class="nav-links">
         <li><a href="index.html">Sobre Nós</a></li>
-        <li><a href="modelos.html">Modelos</a></li>
+        <li><a href="modelos.html" class="active" aria-current="page">Modelos</a></li>
         <li><a href="planos.html">Planos</a></li>
       </ul>
     </div>
-    <div class="footer-col">
-      <h4>Contato</h4>
-      <ul>
-        <li>📱 (11) 99478-2909 - Lucas Yohan</li>
-        <li>📱 (11) 99974-4554 - Davi Koseki</li>
-        <li>✉️ contato@yes.com.br</li>
-        <li>✉️ dados@yes.com.br</li>
-        <li>📍 São Paulo, SP</li>
-        <li>🕒 Seg a Sex, 9h às 18h</li>
-      </ul>
+  </nav>
+
+  <main>
+    <section class="models section" aria-labelledby="models-title">
+      <header class="section-head">
+        <p class="eyebrow">Portfólio</p>
+        <h2 id="models-title">Nossos <em>Modelos</em></h2>
+        <p>Nove projetos prontos, cada um com identidade própria. Clique em "Ver Demonstração" para navegar pelo site completo.</p>
+      </header>
+
+      <div class="models-grid">
+
+        <!-- Salão de Beleza -->
+        <article class="model-card" style="--model-accent: #e6b4b0;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-salao-beleza.svg" alt="Capa do modelo Salão de Beleza" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-salao-beleza.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Salão de Beleza</h3>
+              <span class="model-badge">Mais Vendido</span>
+            </div>
+            <p class="model-desc">Site elegante com agendamento online.</p>
+            <div class="model-actions">
+              <a href="salao-beleza/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Petshop -->
+        <article class="model-card" style="--model-accent: #e8b98a;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-petshop.svg" alt="Capa do modelo Petshop" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-petshop.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Petshop</h3>
+              <span class="model-badge">Popular</span>
+            </div>
+            <p class="model-desc">Loja virtual com catálogo de produtos.</p>
+            <div class="model-actions">
+              <a href="petshop/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dentista -->
+        <article class="model-card" style="--model-accent: #8fd3c8;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-dentista.svg" alt="Capa do modelo Dentista" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-dentista.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Dentista</h3>
+              <span class="model-badge">Executivo</span>
+            </div>
+            <p class="model-desc">Clínica odontológica com perfil profissional.</p>
+            <div class="model-actions">
+              <a href="dentista/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Advogado -->
+        <article class="model-card" style="--model-accent: #c9b37e;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-advogado.svg" alt="Capa do modelo Advogado" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-advogado.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Advogado</h3>
+              <span class="model-badge">Corporativo</span>
+            </div>
+            <p class="model-desc">Escritório de advocacia corporativa.</p>
+            <div class="model-actions">
+              <a href="advogado/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Consultoria -->
+        <article class="model-card" style="--model-accent: #d5dd8e;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-consultoria.svg" alt="Capa do modelo Consultoria" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-consultoria.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Consultoria</h3>
+              <span class="model-badge">Fitness</span>
+            </div>
+            <p class="model-desc">Consultoria fitness.</p>
+            <div class="model-actions">
+              <a href="consultoria/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Estética Automotiva -->
+        <article class="model-card" style="--model-accent: #7fb3f0;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-estetica.svg" alt="Capa do modelo Estética Automotiva" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-estetica.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Estética Automotiva</h3>
+              <span class="model-badge">Detailing</span>
+            </div>
+            <p class="model-desc">Estética automotiva (detailing).</p>
+            <div class="model-actions">
+              <a href="estetica/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Autoescola -->
+        <article class="model-card" style="--model-accent: #9fd69f;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-autoescola.svg" alt="Capa do modelo Autoescola" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-autoescola.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Autoescola</h3>
+              <span class="model-badge">Condução</span>
+            </div>
+            <p class="model-desc">Site para autoescola com sistema de agendamento.</p>
+            <div class="model-actions">
+              <a href="autoescola/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Clínica Estética -->
+        <article class="model-card" style="--model-accent: #d9bf94;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-clinica-estetica.svg" alt="Capa do modelo Clínica Estética" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-clinica-estetica.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Clínica Estética</h3>
+              <span class="model-badge">Luxo</span>
+            </div>
+            <p class="model-desc">Site para clínica de estética avançada.</p>
+            <div class="model-actions">
+              <a href="clinica-estetica/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Studio de Cabelo -->
+        <article class="model-card" style="--model-accent: #bda8e0;">
+          <div class="model-media">
+            <div class="model-shot">
+              <img src="img/cover-studio-cabelo.svg" alt="Capa do modelo Studio de Cabelo" width="1200" height="675" loading="lazy">
+            </div>
+            <div class="model-phone" aria-hidden="true">
+              <div class="phone-frame">
+                <span class="phone-speaker"></span>
+                <div class="phone-screen">
+                  <img src="img/cover-studio-cabelo.svg" alt="" width="1200" height="675" loading="lazy">
+                  <span class="phone-pill"></span>
+                </div>
+                <span class="phone-home"></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-body">
+            <div class="model-head">
+              <h3>Studio de Cabelo</h3>
+              <span class="model-badge">Novo</span>
+            </div>
+            <p class="model-desc">Studio com vitrine de serviços e estilo.</p>
+            <div class="model-actions">
+              <a href="studio-de-cabelo/index.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Ver Demonstração
+              </a>
+              <a href="planos.html" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-col--brand">
+          <a class="logo" href="index.html" aria-label="YES — Your Easy Site">
+            <span class="logo-yes"><span>Y</span><span>E</span><span>S</span></span>
+            <span class="logo-sub">your easy site</span>
+          </a>
+          <p>Agência especializada em criação de sites modernos, responsivos e focados em conversão. Transformamos sua presença digital em resultados.</p>
+          <ul class="footer-social">
+            <li>
+              <a href="https://wa.me/5511994782909" target="_blank" rel="noopener" aria-label="WhatsApp da YES">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram da YES">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contato@yes.com.br" aria-label="E-mail da YES">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-col" aria-label="Links rápidos">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Sobre Nós</a></li>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="planos.html">Planos</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Modelos disponíveis">
+          <h4>Modelos</h4>
+          <ul>
+            <li><a href="salao-beleza/index.html" target="_blank" rel="noopener">Salão de Beleza</a></li>
+            <li><a href="petshop/index.html" target="_blank" rel="noopener">Petshop</a></li>
+            <li><a href="dentista/index.html" target="_blank" rel="noopener">Dentista</a></li>
+            <li><a href="advogado/index.html" target="_blank" rel="noopener">Advogado</a></li>
+            <li><a href="consultoria/index.html" target="_blank" rel="noopener">Consultoria</a></li>
+            <li><a href="estetica/index.html" target="_blank" rel="noopener">Estética Automotiva</a></li>
+            <li><a href="autoescola/index.html" target="_blank" rel="noopener">Autoescola</a></li>
+            <li><a href="clinica-estetica/index.html" target="_blank" rel="noopener">Clínica Estética</a></li>
+            <li><a href="studio-de-cabelo/index.html" target="_blank" rel="noopener">Studio de Cabelo</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col footer-col--contact">
+          <h4>Contato</h4>
+          <address>
+            <ul>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+5511994782909">(11) 99478-2909 <span>— Lucas Yohan</span></a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+5511999744554">(11) 99974-4554 <span>— Davi Koseki</span></a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                <a href="mailto:contato@yes.com.br">contato@yes.com.br</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                São Paulo, SP
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Seg a Sex, 9h às 18h
+              </li>
+            </ul>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>YES — Your Easy Site</strong>. Todos os direitos reservados.</p>
+        <p class="footer-made">Feito com cuidado, página por página.</p>
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 <span class="accent">YES - Your Easy Site</span>. Todos os direitos reservados.</p>
-  </div>
-</footer>
-<!-- BOTÃO FLUTUANTE WHATSAPP -->
-<a href="https://wa.me/5511994782909?text=Olá!%20Gostaria%20de%20falar%20com%20a%20YES%20-%20Your%20Easy%20Site." 
-   class="floating-whatsapp" 
-   target="_blank" 
-   aria-label="Fale Conosco no WhatsApp">
-  💬
-</a>
+  </footer>
+
+  <a href="https://wa.me/5511994782909?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20YES%20-%20Your%20Easy%20Site." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Fale Conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>

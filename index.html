@@ -3,93 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YES - Your Easy Site | Criação de Sites de Alta Conversão</title>
+  <meta name="description" content="YES — Your Easy Site. Criação de sites modernos, rápidos e otimizados para SEO, focados em resultados reais para o seu negócio.">
+  <meta name="theme-color" content="#0b0e11">
+  <title>YES — Your Easy Site | Criação de Sites de Alta Conversão</title>
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230b0e11"/><text x="32" y="45" font-family="Georgia,serif" font-size="38" font-style="italic" fill="%235fd4c6" text-anchor="middle">Y</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- OVERLAY DE INTRODUÇÃO -->
-  <div id="intro-overlay">
-    <div class="intro-text">
-      <span>Y</span><span>O</span><span>U</span><span>R</span>
-      &nbsp;
-      <span>E</span><span>A</span><span>S</span><span>Y</span>
-      &nbsp;
-      <span>S</span><span>I</span><span>T</span><span>E</span>
+  <!-- OVERLAY DE INTRODUÇÃO (roda apenas na primeira visita da sessão) -->
+  <div id="intro-overlay" class="intro-overlay" aria-hidden="true">
+    <div class="intro-stage">
+      <div class="intro-letters" id="intro-letters">
+        <span class="intro-letter intro-yes">Y</span>
+        <span class="intro-letter">O</span>
+        <span class="intro-letter">U</span>
+        <span class="intro-letter">R</span>
+        <span class="intro-space"></span>
+        <span class="intro-letter intro-yes">E</span>
+        <span class="intro-letter">A</span>
+        <span class="intro-letter">S</span>
+        <span class="intro-letter">Y</span>
+        <span class="intro-space"></span>
+        <span class="intro-letter intro-yes">S</span>
+        <span class="intro-letter">I</span>
+        <span class="intro-letter">T</span>
+        <span class="intro-letter">E</span>
+      </div>
+      <p class="intro-sub">sites que convertem</p>
     </div>
   </div>
 
-  <!-- CONTEÚDO PRINCIPAL (invisível no início) -->
-  <div id="main-content" style="opacity: 0; transition: opacity 0.8s ease;">
-    
-    <!-- NAVEGAÇÃO -->
-    <nav class="navbar">
-  <div class="logo">
-    <span id="logo-y" class="cyan">Y</span><span id="logo-e" class="cyan">E</span><span id="logo-s" class="cyan">S</span>
-  </div>
+  <!-- NAVEGAÇÃO -->
+  <nav class="navbar" aria-label="Navegação principal">
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="YES — Your Easy Site">
+        <span class="logo-yes"><span id="logo-y">Y</span><span id="logo-e">E</span><span id="logo-s">S</span></span>
+        <span class="logo-sub">your easy site</span>
+      </a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Sobre Nós</a></li>
+        <li><a href="index.html" class="active" aria-current="page">Sobre Nós</a></li>
         <li><a href="modelos.html">Modelos</a></li>
         <li><a href="planos.html">Planos</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <h1>Soluções Web que Convertem Visitantes em Clientes</h1>
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero section" aria-labelledby="hero-title">
+      <p class="eyebrow">Agência de sites sob medida</p>
+      <h1 id="hero-title">Soluções Web que <em>convertem</em> visitantes em clientes</h1>
       <p>Desenvolvemos sites modernos, rápidos e otimizados para SEO, focados em resultados reais para o seu negócio.</p>
-      <a href="modelos.html" class="btn btn-cta">Ver Nossos Modelos</a>
-    </section>
-
-    <!-- SOBRE A AGÊNCIA -->
-    <section class="about">
-      <h2>Quem <span>Somos</span></h2>
-      <p>Somos a YES - Your Easy Site, uma agência especializada em criação de sites profissionais para pequenas e médias empresas...</p>
-      <p>Trabalhamos com metodologias ágeis...</p>
-      <div style="background: #222; width: 100%; max-width: 600px; height: 250px; margin: 2rem auto; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #555;">
-        [Imagem da Equipe / Escritório]
+      <div class="hero-actions">
+        <a href="modelos.html" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+          Ver Nossos Modelos
+        </a>
+        <a href="https://wa.me/5511994782909?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20YES%20-%20Your%20Easy%20Site." target="_blank" rel="noopener" class="btn btn-ghost">Falar no WhatsApp</a>
       </div>
     </section>
 
-    <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-col">
-      <h4>YES - Your Easy Site</h4>
-      <p>Agência especializada em criação de sites modernos, responsivos e focados em conversão. Transformamos sua presença digital em resultados.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Links Rápidos</h4>
-      <ul>
-        <li><a href="index.html">Sobre Nós</a></li>
-        <li><a href="modelos.html">Modelos</a></li>
-        <li><a href="planos.html">Planos</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contato</h4>
-      <ul>
-        <li>📱 (11) 99478-2909 - Lucas Yohan</li>
-        <li>📱 (11) 99974-4554 - Davi Koseki</li>
-        <li>✉️ contato@yes.com.br</li>
-        <li>✉️ dados@yes.com.br</li>
-        <li>📍 São Paulo, SP</li>
-        <li>🕒 Seg a Sex, 9h às 18h</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 <span class="accent">YES - Your Easy Site</span>. Todos os direitos reservados.</p>
-  </div>
-</footer>
+    <!-- SOBRE A AGÊNCIA -->
+    <section class="about section" aria-labelledby="about-title">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Sobre nós</p>
+          <h2 id="about-title">Quem <em>Somos</em></h2>
+          <p>Somos a YES — Your Easy Site, uma agência especializada em criação de sites profissionais para pequenas e médias empresas. Unimos design refinado, código limpo e estratégia de conversão para construir uma presença digital à altura do seu negócio.</p>
+          <p>Trabalhamos com metodologias ágeis: você acompanha cada etapa do projeto, do primeiro esboço ao lançamento, com comunicação direta e sem ruído.</p>
+          <div class="about-cta">
+            <a href="planos.html" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/></svg>
+              Conhecer os Planos
+            </a>
+          </div>
+        </div>
+        <aside class="about-card" aria-label="Números da YES">
+          <div class="about-mark">YES<span>est. 2025</span></div>
+          <ul class="about-stats">
+            <li><strong>9</strong><span>modelos prontos</span></li>
+            <li><strong>4</strong><span>planos sob medida</span></li>
+            <li><strong>100%</strong><span>atendimento humano</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-<!-- BOTÃO FLUTUANTE WHATSAPP -->
-<a href="https://wa.me/5511994782909?text=Olá!%20Gostaria%20de%20falar%20com%20a%20YES%20-%20Your%20Easy%20Site." 
-   class="floating-whatsapp" 
-   target="_blank" 
-   aria-label="Fale Conosco no WhatsApp">
-  💬
-</a>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-col--brand">
+          <a class="logo" href="index.html" aria-label="YES — Your Easy Site">
+            <span class="logo-yes"><span>Y</span><span>E</span><span>S</span></span>
+            <span class="logo-sub">your easy site</span>
+          </a>
+          <p>Agência especializada em criação de sites modernos, responsivos e focados em conversão. Transformamos sua presença digital em resultados.</p>
+          <ul class="footer-social">
+            <li>
+              <a href="https://wa.me/5511994782909" target="_blank" rel="noopener" aria-label="WhatsApp da YES">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram da YES">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contato@yes.com.br" aria-label="E-mail da YES">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-col" aria-label="Links rápidos">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Sobre Nós</a></li>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="planos.html">Planos</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Modelos disponíveis">
+          <h4>Modelos</h4>
+          <ul>
+            <li><a href="salao-beleza/index.html" target="_blank" rel="noopener">Salão de Beleza</a></li>
+            <li><a href="petshop/index.html" target="_blank" rel="noopener">Petshop</a></li>
+            <li><a href="dentista/index.html" target="_blank" rel="noopener">Dentista</a></li>
+            <li><a href="advogado/index.html" target="_blank" rel="noopener">Advogado</a></li>
+            <li><a href="consultoria/index.html" target="_blank" rel="noopener">Consultoria</a></li>
+            <li><a href="estetica/index.html" target="_blank" rel="noopener">Estética Automotiva</a></li>
+            <li><a href="autoescola/index.html" target="_blank" rel="noopener">Autoescola</a></li>
+            <li><a href="clinica-estetica/index.html" target="_blank" rel="noopener">Clínica Estética</a></li>
+            <li><a href="studio-de-cabelo/index.html" target="_blank" rel="noopener">Studio de Cabelo</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col footer-col--contact">
+          <h4>Contato</h4>
+          <address>
+            <ul>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+5511994782909">(11) 99478-2909 <span>— Lucas Yohan</span></a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+5511999744554">(11) 99974-4554 <span>— Davi Koseki</span></a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                <a href="mailto:contato@yes.com.br">contato@yes.com.br</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                São Paulo, SP
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Seg a Sex, 9h às 18h
+              </li>
+            </ul>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>YES — Your Easy Site</strong>. Todos os direitos reservados.</p>
+        <p class="footer-made">Feito com cuidado, página por página.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5511994782909?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20YES%20-%20Your%20Easy%20Site." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Fale Conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <script src="script.js"></script>
 </body>

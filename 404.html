@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Página não encontrada | YES — Your Easy Site</title>
+  <style>
+    :root {
+      --bg: #0b0e11;
+      --accent: #5fd4c6;
+      --text: #e9edf0;
+      --text-soft: #aab4bd;
+      --text-mute: #77828c;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(700px 400px at 50% 30%, rgba(95, 212, 198, 0.08), transparent 70%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card { text-align: center; max-width: 460px; }
+    .code {
+      font-family: 'Fraunces', Georgia, serif;
+      font-style: italic;
+      font-size: clamp(5rem, 16vw, 8rem);
+      font-weight: 600;
+      line-height: 1;
+      color: var(--accent);
+      text-shadow: 0 18px 50px rgba(95, 212, 198, 0.3);
+    }
+    h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 600;
+      font-size: 1.6rem;
+      margin: 1.4rem 0 0.7rem;
+    }
+    p { color: var(--text-soft); font-size: 0.98rem; line-height: 1.7; margin-bottom: 2.2rem; }
+    .links { display: flex; gap: 0.9rem; justify-content: center; flex-wrap: wrap; }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    }
+    a.btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background-color: var(--accent);
+      color: #0b0e11;
+      box-shadow: 0 10px 28px -10px rgba(95, 212, 198, 0.55);
+    }
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: var(--text-soft);
+    }
+    .btn-outline:hover { color: var(--accent); border-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <p class="code">404</p>
+    <h1>Esta página se perdeu no caminho</h1>
+    <p>O endereço que você tentou acessar não existe ou foi movido. Vamos te levar de volta para o que importa.</p>
+    <div class="links">
+      <a class="btn btn-primary" href="/index.html">Voltar ao início</a>
+      <a class="btn btn-outline" href="/modelos.html">Ver Modelos</a>
+      <a class="btn btn-outline" href="/planos.html">Ver Planos</a>
+    </div>
+  </main>
+</body>
+</html>

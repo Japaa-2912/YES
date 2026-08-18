@@ -1,0 +1,12 @@
+{
+  "name": "yes-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "YES — Your Easy Site (HTML/CSS/JS puro)",
+  "scripts": {
+    "audit": "node audit.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^23.11.1"
+  }
+}

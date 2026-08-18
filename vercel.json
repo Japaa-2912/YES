@@ -1,5 +1,35 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/Autoescola",
+      "destination": "/autoescola",
+      "permanent": true
+    },
+    {
+      "source": "/Autoescola/:path*",
+      "destination": "/autoescola/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/clinica%20estetica",
+      "destination": "/clinica-estetica",
+      "permanent": true
+    },
+    {
+      "source": "/clinica%20estetica/:path*",
+      "destination": "/clinica-estetica/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/Studio%20de%20Cabelo",
+      "destination": "/studio-de-cabelo",
+      "permanent": true
+    },
+    {
+      "source": "/Studio%20de%20Cabelo/:path*",
+      "destination": "/studio-de-cabelo/:path*",
+      "permanent": true
+    }
   ]
 }
