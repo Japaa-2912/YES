@@ -1,0 +1,8 @@
+node_modules/
+.vercel/
+*.log
+.playwright-mcp/
+node_modules.rar
+.roo/
+audit/screenshots/
+audit/audit-report.txt

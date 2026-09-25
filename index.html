@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="description" content="A YES — Your Easy Site cria sites profissionais, rápidos e pensados para conversão para pequenas e médias empresas. Veja modelos e planos a partir de R$ 250.">
+  <meta name="theme-color" content="#0b0e11">
+  <title>YES — Your Easy Site | Criação de Sites Profissionais</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="YES — Your Easy Site">
+  <meta property="og:title" content="YES — Your Easy Site | Criação de Sites Profissionais">
+  <meta property="og:description" content="Seu negócio merece um site que pareça grande. Sites profissionais, rápidos e pensados para transformar sua presença digital em resultados.">
+  <meta property="og:image" content="img/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YES — Your Easy Site | Criação de Sites Profissionais">
+  <meta name="twitter:description" content="Seu negócio merece um site que pareça grande. Sites profissionais, rápidos e pensados para transformar sua presença digital em resultados.">
+  <meta name="twitter:image" content="img/og-image.jpg">
+
+  <!-- TODO: adicionar <link rel="canonical"> quando houver domínio definitivo -->
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230b0e11"/><text x="32" y="45" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="700" fill="%235fd4c6" text-anchor="middle">Y</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <!-- OVERLAY DE INTRODUÇÃO (roda apenas na primeira visita da sessão) -->
+  <div id="intro-overlay" class="intro-overlay" aria-hidden="true">
+    <span class="intro-beam"></span>
+    <span class="intro-shine"></span>
+    <div class="intro-particles" id="intro-particles"></div>
+    <div class="intro-stage">
+      <div class="intro-letters" id="intro-letters">
+        <span class="intro-letter intro-yes">Y</span>
+        <span class="intro-letter">O</span>
+        <span class="intro-letter">U</span>
+        <span class="intro-letter">R</span>
+        <span class="intro-space"></span>
+        <span class="intro-letter intro-yes">E</span>
+        <span class="intro-letter">A</span>
+        <span class="intro-letter">S</span>
+        <span class="intro-letter">Y</span>
+        <span class="intro-space"></span>
+        <span class="intro-letter intro-yes">S</span>
+        <span class="intro-letter">I</span>
+        <span class="intro-letter">T</span>
+        <span class="intro-letter">E</span>
+      </div>
+      <p class="intro-sub">sites que convertem</p>
+    </div>
+  </div>
+
+  <!-- NAVEGAÇÃO -->
+  <nav class="navbar" aria-label="Navegação principal">
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="YES — Your Easy Site">
+        <span class="logo-yes"><span id="logo-y">Y</span><span id="logo-e">E</span><span id="logo-s">S</span></span>
+        <span class="logo-sub">your easy site</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active" aria-current="page">Sobre Nós</a></li>
+          <li><a href="modelos.html">Modelos</a></li>
+          <li><a href="planos.html">Planos</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="https://wa.me/5511994782909?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YES%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." target="_blank" rel="noopener">
+          Começar meu projeto
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-grid">
+
+        <div class="hero-copy">
+          <p class="eyebrow">Agência de sites sob medida</p>
+          <h1 id="hero-title">Seu negócio merece um site que pareça <em>grande</em>.</h1>
+          <p>Sites profissionais, rápidos e pensados para transformar sua presença digital em uma ferramenta que trabalha pelo seu negócio.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5511994782909?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YES%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Quero meu site
+            </a>
+            <a class="btn btn-outline" href="modelos.html">Ver modelos</a>
+          </div>
+          <p class="hero-note">Pagamento único · a partir de R$ 250</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hv-glow"></div>
+
+          <figure class="hv-main">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="browser-dots"><i></i><i></i><i></i></span>
+                <span class="browser-url">salao-beleza.com.br</span>
+              </div>
+              <img src="img/hero-salao.jpg" alt="Demonstração real do modelo Salão de Beleza" width="1280" height="800" loading="eager" onerror="this.onerror=null;this.src='img/cover-salao-beleza.svg';">
+            </div>
+          </figure>
+
+          <figure class="hv-card hv-card--1">
+            <div class="browser-frame">
+              <div class="browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span></div>
+              <img src="img/hero-petshop.jpg" alt="" width="1280" height="800" loading="eager" onerror="this.onerror=null;this.src='img/cover-petshop.svg';">
+            </div>
+          </figure>
+
+          <figure class="hv-card hv-card--2">
+            <div class="browser-frame">
+              <div class="browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span></div>
+              <img src="img/hero-dentista.jpg" alt="" width="1280" height="800" loading="eager" onerror="this.onerror=null;this.src='img/cover-dentista.svg';">
+            </div>
+          </figure>
+
+          <figure class="hv-phone">
+            <div class="phone-frame">
+              <span class="phone-speaker"></span>
+              <img src="img/hero-mobile-salao.jpg" alt="" width="390" height="844" loading="eager" onerror="this.onerror=null;this.src='img/cover-salao-beleza.svg';">
+              <span class="phone-pill"></span>
+            </div>
+          </figure>
+
+          <span class="hv-chip">Modelos reais · feitos pela YES</span>
+        </div>
+
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Role para explorar</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- FAIXA DE CONFIANÇA -->
+    <section class="trustbar" aria-label="Diferenciais da YES">
+      <ul class="trustbar-list">
+        <li>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Sites profissionais
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          Responsivos
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v3l2 2"/></svg>
+          SEO
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Atendimento humano
+        </li>
+      </ul>
+      <ul class="trustbar-stats">
+        <li><strong data-count="9">9</strong><span>modelos prontos</span></li>
+        <li><strong data-count="4">4</strong><span>planos sob medida</span></li>
+        <li><strong data-count="100" data-suffix="%">100%</strong><span>atendimento humano</span></li>
+      </ul>
+    </section>
+
+    <!-- MARQUEE DE SEGMENTOS -->
+    <section class="marquee" aria-label="Segmentos atendidos pela YES">
+      <div class="marquee-track">
+        <ul class="marquee-list">
+          <li>Salões de beleza</li>
+          <li>Petshops</li>
+          <li>Dentistas</li>
+          <li>Advogados</li>
+          <li>Consultorias</li>
+          <li>Estéticas automotivas</li>
+          <li>Autoescolas</li>
+          <li>Clínicas de estética</li>
+          <li>Studios de cabelo</li>
+        </ul>
+        <ul class="marquee-list" aria-hidden="true">
+          <li>Salões de beleza</li>
+          <li>Petshops</li>
+          <li>Dentistas</li>
+          <li>Advogados</li>
+          <li>Consultorias</li>
+          <li>Estéticas automotivas</li>
+          <li>Autoescolas</li>
+          <li>Clínicas de estética</li>
+          <li>Studios de cabelo</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- O QUE FAZEMOS -->
+    <section class="services section" aria-labelledby="services-title" data-reveal>
+      <header class="section-head">
+        <p class="eyebrow">O que fazemos</p>
+        <h2 id="services-title">Mais do que <em>um site</em>.</h2>
+        <p>Construímos experiências digitais pensadas para apresentar seu negócio, facilitar o contato com seus clientes e transformar visitas em oportunidades.</p>
+      </header>
+      <div class="services-grid" data-reveal-stagger>
+        <article class="service-card">
+          <span class="service-num">01</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3>Design</h3>
+          <p>Composição, tipografia e identidade aplicados para sua marca parecer exatamente o que ela é: profissional.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-num">02</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Desenvolvimento</h3>
+          <p>Código limpo, leve e organizado, entregue com a solidez de quem constrói para o seu negócio.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-num">03</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 10l3 3 4-5 3 2"/></svg>
+          </div>
+          <h3>Responsividade</h3>
+          <p>Uma experiência impecável em celular, tablet e computador — do primeiro acesso ao último.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-num">04</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+          </div>
+          <h3>Conversão</h3>
+          <p>Hierarquia, chamadas e navegação desenhadas para transformar visitas em contatos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MODELOS NA HOME -->
+    <section class="models-home section" aria-labelledby="models-home-title" data-reveal>
+      <header class="section-head">
+        <p class="eyebrow">Portfólio</p>
+        <h2 id="models-home-title">Veja o que podemos criar para o <em>seu negócio</em></h2>
+        <p>Modelos desenvolvidos para diferentes tipos de empresas, com estrutura profissional e experiência pensada para cada segmento.</p>
+      </header>
+
+      <div class="models-home-grid" data-reveal-stagger>
+
+        <article class="model-mini" style="--model-accent: #e6b4b0;">
+          <a class="model-mini-media" href="salao-beleza/index.html" target="_blank" rel="noopener" aria-label="Ver demonstração do modelo Salão de Beleza">
+            <img src="img/cover-salao-beleza.svg" alt="Capa do modelo Salão de Beleza" width="1200" height="675" loading="lazy">
+          </a>
+          <div class="model-mini-body">
+            <span class="model-badge">Beleza</span>
+            <h3><a href="salao-beleza/index.html" target="_blank" rel="noopener">Salão de Beleza</a></h3>
+            <p>Site elegante com agendamento online.</p>
+            <a class="model-mini-link" href="salao-beleza/index.html" target="_blank" rel="noopener">Ver demonstração
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="model-mini" style="--model-accent: #e8b98a;">
+          <a class="model-mini-media" href="petshop/index.html" target="_blank" rel="noopener" aria-label="Ver demonstração do modelo Petshop">
+            <img src="img/cover-petshop.svg" alt="Capa do modelo Petshop" width="1200" height="675" loading="lazy">
+          </a>
+          <div class="model-mini-body">
+            <span class="model-badge">Pets</span>
+            <h3><a href="petshop/index.html" target="_blank" rel="noopener">Petshop</a></h3>
+            <p>Loja virtual com catálogo de produtos.</p>
+            <a class="model-mini-link" href="petshop/index.html" target="_blank" rel="noopener">Ver demonstração
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="model-mini" style="--model-accent: #8fd3c8;">
+          <a class="model-mini-media" href="dentista/index.html" target="_blank" rel="noopener" aria-label="Ver demonstração do modelo Dentista">
+            <img src="img/cover-dentista.svg" alt="Capa do modelo Dentista" width="1200" height="675" loading="lazy">
+          </a>
+          <div class="model-mini-body">
+            <span class="model-badge">Saúde</span>
+            <h3><a href="dentista/index.html" target="_blank" rel="noopener">Dentista</a></h3>
+            <p>Clínica odontológica com perfil profissional.</p>
+            <a class="model-mini-link" href="dentista/index.html" target="_blank" rel="noopener">Ver demonstração
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="model-mini" style="--model-accent: #c9b37e;">
+          <a class="model-mini-media" href="advogado/index.html" target="_blank" rel="noopener" aria-label="Ver demonstração do modelo Advogado">
+            <img src="img/cover-advogado.svg" alt="Capa do modelo Advogado" width="1200" height="675" loading="lazy">
+          </a>
+          <div class="model-mini-body">
+            <span class="model-badge">Serviços</span>
+            <h3><a href="advogado/index.html" target="_blank" rel="noopener">Advogado</a></h3>
+            <p>Escritório de advocacia corporativa.</p>
+            <a class="model-mini-link" href="advogado/index.html" target="_blank" rel="noopener">Ver demonstração
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="model-mini" style="--model-accent: #7fb3f0;">
+          <a class="model-mini-media" href="estetica/index.html" target="_blank" rel="noopener" aria-label="Ver demonstração do modelo Estética Automotiva">
+            <img src="img/cover-estetica.svg" alt="Capa do modelo Estética Automotiva" width="1200" height="675" loading="lazy">
+          </a>
+          <div class="model-mini-body">
+            <span class="model-badge">Automotivo</span>
+            <h3><a href="estetica/index.html" target="_blank" rel="noopener">Estética Automotiva</a></h3>
+            <p>Detailing e estética veicular.</p>
+            <a class="model-mini-link" href="estetica/index.html" target="_blank" rel="noopener">Ver demonstração
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="model-mini" style="--model-accent: #9fd69f;">
+          <a class="model-mini-media" href="autoescola/index.html" target="_blank" rel="noopener" aria-label="Ver demonstração do modelo Autoescola">
+            <img src="img/cover-autoescola.svg" alt="Capa do modelo Autoescola" width="1200" height="675" loading="lazy">
+          </a>
+          <div class="model-mini-body">
+            <span class="model-badge">Educação</span>
+            <h3><a href="autoescola/index.html" target="_blank" rel="noopener">Autoescola</a></h3>
+            <p>Site com sistema de agendamento de aulas.</p>
+            <a class="model-mini-link" href="autoescola/index.html" target="_blank" rel="noopener">Ver demonstração
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="models-home-cta" data-reveal>
+        <a class="btn btn-outline" href="modelos.html">Ver todos os modelos</a>
+        <p>A partir de R$ 250 · <a href="planos.html">ver planos</a></p>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="how section" aria-labelledby="how-title" data-reveal>
+      <header class="section-head">
+        <p class="eyebrow">Como funciona</p>
+        <h2 id="how-title">Do seu negócio para a <em>internet</em>.</h2>
+        <p>Quatro passos simples, do primeiro contato ao site no ar.</p>
+      </header>
+      <ol class="how-steps" data-reveal-stagger>
+        <li class="how-step">
+          <span class="how-num">01</span>
+          <h3>Você conta sua ideia</h3>
+          <p>Pelo WhatsApp, em poucos minutos.</p>
+        </li>
+        <li class="how-step">
+          <span class="how-num">02</span>
+          <h3>Nós planejamos seu site</h3>
+          <p>Estrutura, páginas e estilo sob medida.</p>
+        </li>
+        <li class="how-step">
+          <span class="how-num">03</span>
+          <h3>Você acompanha o desenvolvimento</h3>
+          <p>Atualizações a cada etapa, sem surpresas.</p>
+        </li>
+        <li class="how-step">
+          <span class="how-num">04</span>
+          <h3>Seu site entra no ar</h3>
+          <p>Publicado, responsivo e pronto para receber clientes.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- POR QUE YES -->
+    <section class="why section" aria-labelledby="why-title" data-reveal>
+      <div class="why-intro">
+        <p class="eyebrow">Sobre a YES</p>
+        <h2 id="why-title">Por que escolher a <em>YES</em>?</h2>
+        <p>Somos a YES — Your Easy Site, uma agência especializada em criação de sites profissionais para pequenas e médias empresas. Unimos design refinado, código limpo e estratégia de conversão para construir uma presença digital à altura do seu negócio.</p>
+        <p>Trabalhamos com metodologias ágeis: você acompanha cada etapa do projeto, do primeiro esboço ao lançamento, com comunicação direta e sem ruído.</p>
+      </div>
+      <div class="why-grid" data-reveal-stagger>
+        <article class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+          </div>
+          <h3>Design sob medida</h3>
+          <p>Sites pensados para representar sua marca.</p>
+        </article>
+        <article class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Performance</h3>
+          <p>Experiências rápidas e leves.</p>
+        </article>
+        <article class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Responsividade</h3>
+          <p>Seu site funcionando bem em celular, tablet e computador.</p>
+        </article>
+        <article class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h3>Atendimento humano</h3>
+          <p>Comunicação direta durante todo o projeto.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" aria-labelledby="faq-title" data-reveal>
+      <header class="section-head">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2 id="faq-title">Perguntas que <em>sempre chegam</em></h2>
+        <p>Respostas diretas para começar sem enrolação.</p>
+      </header>
+
+      <div class="faq-list" data-reveal-stagger>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
+            <span class="faq-num">01</span>
+            <span class="faq-q">Quanto custa um site?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+            <p>Os planos da YES vão de R$ 250 a R$ 800, com pagamento único. Cada plano define a quantidade de páginas, o nível de acompanhamento, o SEO e a manutenção inclusa — todos os detalhes estão na <a href="planos.html">página de planos</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
+            <span class="faq-num">02</span>
+            <span class="faq-q">Preciso saber como meu site deve ser?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+            <p>Não. Você conhece o seu negócio e nós ajudamos a transformar esse conhecimento em uma experiência digital clara, bonita e pensada para seus clientes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
+            <span class="faq-num">03</span>
+            <span class="faq-q">Posso usar um modelo pronto?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+            <p>Sim. São 9 modelos prontos, cada um com identidade própria — veja todos na <a href="modelos.html">página de modelos</a>. A partir deles, o projeto é desenvolvido sob medida para o seu negócio.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
+            <span class="faq-num">04</span>
+            <span class="faq-q">Como funciona o acompanhamento?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+            <p>Você acompanha cada etapa do projeto, do primeiro esboço ao lançamento, com comunicação direta e sem ruído — pelo WhatsApp, com atendimento humano.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" id="faq-q-5" aria-expanded="false" aria-controls="faq-a-5">
+            <span class="faq-num">05</span>
+            <span class="faq-q">Onde a YES atende?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+            <p>Estamos em São Paulo, SP, com atendimento de segunda a sexta, das 9h às 18h, pelo WhatsApp e por e-mail.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VOCÊ NÃO PRECISA SABER -->
+    <section class="cta-section section" aria-labelledby="cta-help-title" data-reveal>
+      <p class="eyebrow">Sem complicação</p>
+      <h2 id="cta-help-title">Você não precisa saber como seu site deve <em>ser</em>.</h2>
+      <p>Você conhece o seu negócio. Nós ajudamos a transformar esse conhecimento em uma experiência digital clara, bonita e pensada para seus clientes.</p>
+      <a class="btn btn-primary" href="https://wa.me/5511994782909?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YES%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." target="_blank" rel="noopener">Falar com a YES</a>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final section" aria-labelledby="cta-final-title" data-reveal>
+      <div class="cta-final-card">
+        <p class="eyebrow">Vamos começar?</p>
+        <h2 id="cta-final-title">Seu próximo site pode começar <em>hoje</em>.</h2>
+        <p>Conte para a YES o que você precisa e vamos transformar sua ideia em presença digital.</p>
+        <div class="cta-final-actions">
+          <a class="btn btn-primary" href="https://wa.me/5511994782909?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YES%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." target="_blank" rel="noopener">Começar meu projeto</a>
+          <a class="btn btn-outline" href="planos.html">Ver planos</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-col--brand">
+          <a class="logo" href="index.html" aria-label="YES — Your Easy Site">
+            <span class="logo-yes"><span>Y</span><span>E</span><span>S</span></span>
+            <span class="logo-sub">your easy site</span>
+          </a>
+          <p>Agência especializada em criação de sites modernos, responsivos e focados em conversão. Transformamos sua presença digital em resultados.</p>
+          <ul class="footer-social">
+            <li>
+              <a href="https://wa.me/5511994782909" target="_blank" rel="noopener" aria-label="WhatsApp da YES">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </li>
+            <li>
+              <!-- TODO: substituir por https://instagram.com/<perfil-oficial> quando existir -->
+              <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram da YES (link temporário)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contato@yes.com.br" aria-label="E-mail da YES">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-col" aria-label="Links rápidos">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Sobre Nós</a></li>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="planos.html">Planos</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Modelos disponíveis">
+          <h4>Modelos</h4>
+          <ul>
+            <li><a href="salao-beleza/index.html" target="_blank" rel="noopener">Salão de Beleza</a></li>
+            <li><a href="petshop/index.html" target="_blank" rel="noopener">Petshop</a></li>
+            <li><a href="dentista/index.html" target="_blank" rel="noopener">Dentista</a></li>
+            <li><a href="advogado/index.html" target="_blank" rel="noopener">Advogado</a></li>
+            <li><a href="consultoria/index.html" target="_blank" rel="noopener">Consultoria</a></li>
+            <li><a href="estetica/index.html" target="_blank" rel="noopener">Estética Automotiva</a></li>
+            <li><a href="autoescola/index.html" target="_blank" rel="noopener">Autoescola</a></li>
+            <li><a href="clinica-estetica/index.html" target="_blank" rel="noopener">Clínica Estética</a></li>
+            <li><a href="studio-de-cabelo/index.html" target="_blank" rel="noopener">Studio de Cabelo</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col footer-col--contact">
+          <h4>Contato</h4>
+          <address>
+            <ul>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+5511994782909">(11) 99478-2909 <span>— Lucas Yohan</span></a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+5511999744554">(11) 99974-4554 <span>— Davi Koseki</span></a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                <a href="mailto:contato@yes.com.br">contato@yes.com.br</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                São Paulo, SP
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Seg a Sex, 9h às 18h
+              </li>
+            </ul>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>YES — Your Easy Site</strong>. Todos os direitos reservados.</p>
+        <p class="footer-made">Feito com cuidado, página por página.</p>
+        <button class="to-top" type="button">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          Voltar ao topo
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5511994782909?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YES%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Fale Conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luminae Estética — Clínica de Estética Avançada</title>
+  <meta name="description" content="Template premium para clínicas de estética. Personalize logo, cores e conteúdo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+
+      <a href="index.html" class="brand" aria-label="Ir para página inicial">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Luminae</span>
+          <span class="brand-tagline">Estética Avançada</span>
+        </span>
+      </a>
+
+      <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li class="nav-item is-active">
+            <a href="index.html" class="nav-link" aria-current="page">Início</a>
+          </li>
+
+          <!-- Dropdown "Pele" → página pele.html (deep-link nos procedimentos) -->
+          <li class="nav-item has-submenu">
+            <button type="button" class="nav-link nav-link--toggle" aria-expanded="false" aria-haspopup="true">
+              Pele
+              <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="pele.html#servico-toxina" class="submenu-link">Toxina Botulínica</a></li>
+              <li><a href="pele.html#servico-bioestimuladores" class="submenu-link">Bioestimuladores de Colágeno</a></li>
+              <li><a href="pele.html#servico-preenchimento" class="submenu-link">Preenchimento de Ácido Hialurônico</a></li>
+              <li><a href="pele.html#servico-skinbooster" class="submenu-link">Skinbooster</a></li>
+              <li><a href="pele.html#servico-fios" class="submenu-link">Fios de PDO e Silhouette</a></li>
+              <li><a href="pele.html#servico-peelings" class="submenu-link">Peelings</a></li>
+              <li><a href="pele.html#servico-ultrassom" class="submenu-link">Ultrassom Microfocado</a></li>
+              <li><a href="pele.html#servico-laser" class="submenu-link">Luz Intensa Pulsada e Laser</a></li>
+              <li><a href="pele.html#servico-limpeza" class="submenu-link">Limpeza de Pele</a></li>
+            </ul>
+          </li>
+
+          <!-- Dropdown "Cabelos" → página cabelo.html -->
+          <li class="nav-item has-submenu">
+            <button type="button" class="nav-link nav-link--toggle" aria-expanded="false" aria-haspopup="true">
+              Cabelos
+              <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="cabelo.html#servico-terapia-capilar" class="submenu-link">Terapia Capilar</a></li>
+              <li><a href="cabelo.html#servico-mmp" class="submenu-link">MMP Capilar</a></li>
+              <li><a href="cabelo.html#servico-mesoterapia" class="submenu-link">Intradermoterapia Capilar</a></li>
+              <li><a href="cabelo.html#servico-lllt" class="submenu-link">Laser LLLT</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="cirurgias.html" class="nav-link">Cirurgias</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#sobre" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contato" class="nav-link">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="index.html#contato" class="btn btn--primary btn--sm">Agendar</a>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="WhatsApp" title="WhatsApp">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <div class="nav-backdrop" hidden aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Clínica de estética avançada</p>
+          <h1 class="hero-title">
+            Realce sua beleza<br>
+            <em>com naturalidade</em>
+          </h1>
+          <p class="hero-desc">
+            Tratamentos personalizados para pele, cabelos e harmonização facial.
+            Ciência, cuidado e resultados que respeitam sua identidade.
+          </p>
+          <div class="hero-actions">
+            <a href="index.html#contato" class="btn btn--primary">Agendar consulta</a>
+            <a href="#tratamentos" class="btn btn--ghost">Ver tratamentos</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <span class="hero-card-label">+ de 15</span>
+            <span class="hero-card-text">tratamentos<br>disponíveis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRATAMENTOS (CATEGORIAS) ================= -->
+    <section class="section" id="tratamentos">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-eyebrow">Nossos serviços</p>
+          <h2 class="section-title">Tratamentos em destaque</h2>
+          <p class="section-text">Escolha uma categoria e explore os procedimentos disponíveis.</p>
+        </header>
+
+        <div class="category-grid">
+
+          <article class="category-card">
+            <p class="category-count">9 procedimentos</p>
+            <h3>Pele</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+            <a href="pele.html" class="category-link">
+              Ver tratamentos
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="category-card">
+            <p class="category-count">4 procedimentos</p>
+            <h3>Cabelo</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            <a href="cabelo.html" class="category-link">
+              Ver tratamentos
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="category-card">
+            <p class="category-count">5 procedimentos</p>
+            <h3>Cirurgias</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="cirurgias.html" class="category-link">
+              Ver tratamentos
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="section section--alt" id="sobre">
+      <div class="container container--narrow">
+        <header class="section-header">
+          <p class="section-eyebrow">Sobre a clínica</p>
+          <h2 class="section-title">Excelência em cada detalhe</h2>
+        </header>
+        <p class="section-text">
+          Este é um template pronto para personalização. Substitua textos, logo, cores e imagens
+          para adaptar à identidade da sua clínica ou do seu cliente.
+        </p>
+        <a href="index.html#contato" class="btn btn--primary">Conhecer a estrutura</a>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="section section--contact" id="contato">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-eyebrow">Contato</p>
+          <h2 class="section-title">Agende sua avaliação</h2>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Informações de contato -->
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+              </span>
+              <div>
+                <h3>Endereço</h3>
+                <p>Rua [Nome da Rua], nº [000] — [Bairro]<br>[Cidade] – [UF]</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z"/></svg>
+              </span>
+              <div>
+                <h3>Telefone / WhatsApp</h3>
+                <p>(00) 00000-0000</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+              </span>
+              <div>
+                <h3>E-mail</h3>
+                <p>contato@[sua-marca].com.br</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7z"/></svg>
+              </span>
+              <div>
+                <h3>Horário de atendimento</h3>
+                <p>Segunda a sexta, das 09h às 19h<br>Sábado, das 09h às 13h</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário -->
+          <form class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-nome">Nome completo *</label>
+                <input type="text" id="f-nome" name="nome" placeholder="[Seu nome]" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="f-email">E-mail *</label>
+                <input type="email" id="f-email" name="email" placeholder="[Seu e-mail]" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-fone">Telefone / WhatsApp</label>
+                <input type="tel" id="f-fone" name="fone" placeholder="(00) 00000-0000" autocomplete="tel">
+              </div>
+              <div class="form-field">
+                <label for="f-assunto">Procedimento de interesse</label>
+                <select id="f-assunto" name="assunto">
+                  <option value="">[Selecione uma opção]</option>
+                  <option value="pele">Pele</option>
+                  <option value="cabelo">Cabelo</option>
+                  <option value="cirurgias">Cirurgias</option>
+                  <option value="outros">Outros</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="f-mensagem">Mensagem *</label>
+              <textarea id="f-mensagem" name="mensagem" rows="5" placeholder="[Sua mensagem]" required></textarea>
+            </div>
+
+            <div class="form-field form-field--check">
+              <input type="checkbox" id="f-lgpd" name="lgpd" required>
+              <label for="f-lgpd">Autorizo o uso dos meus dados para contato sobre o agendamento. *</label>
+            </div>
+
+            <p class="form-error" role="alert" hidden></p>
+            <p class="form-success" role="status" hidden>Mensagem enviada com sucesso! Retornaremos em breve.</p>
+
+            <button type="submit" class="btn btn--primary form-submit">Enviar mensagem</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+
+    <!-- Fio dourado decorativo no topo do rodapé -->
+    <div class="footer-gold-line" aria-hidden="true"><span></span></div>
+
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Marca + Redes Sociais -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html#topo" class="brand" aria-label="Voltar ao topo">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">
+              <span class="brand-name">Luminae</span>
+              <span class="brand-tagline">Estética Avançada</span>
+            </span>
+          </a>
+          <p class="footer-about">
+            [Slogan da Marca] — Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="WhatsApp" title="WhatsApp">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links Úteis -->
+        <div class="footer-col">
+          <h3 class="footer-title">Links Úteis</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pele.html">Tratamentos para Pele</a></li>
+            <li><a href="cabelo.html">Tratamentos para Cabelo</a></li>
+            <li><a href="cirurgias.html">Cirurgias</a></li>
+            <li><a href="index.html#sobre">Sobre a clínica</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Horário de Funcionamento -->
+        <div class="footer-col">
+          <h3 class="footer-title">Horário de Funcionamento</h3>
+          <ul class="footer-hours">
+            <li><span>Segunda — Sexta</span><span>09h — 19h</span></li>
+            <li><span>Sábado</span><span>09h — 13h</span></li>
+            <li><span>Domingo</span><span>Fechado</span></li>
+          </ul>
+        </div>
+
+        <!-- Endereço -->
+        <div class="footer-col">
+          <h3 class="footer-title">Endereço</h3>
+          <address class="footer-address">
+            Rua [Nome da Rua], nº [000]<br>
+            [Bairro] — [Cidade]/[UF]<br>
+            <a href="#">(00) 00000-0000</a><br>
+            <a href="#">contato@[sua-marca].com.br</a>
+          </address>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Barra inferior com divisória dourada -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span data-year>2026</span> [NOME DA MARCA] — Todos os direitos reservados.</p>
+        <a href="#topo" class="footer-top">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/catalog-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
