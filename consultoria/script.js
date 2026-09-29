@@ -81,6 +81,93 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ---------- Formulário de Anamnese -> WhatsApp ----------
+    const anamnesisForm = document.getElementById('anamnesisForm');
+    if (anamnesisForm) {
+
+        // Mesmo número usado nos demais CTAs da página (troque aqui se precisar)
+        const WHATSAPP_ANAMNESE = '5511999999999';
+
+        // Checkbox "Nenhuma" é exclusiva das demais condições
+        const condicaoChecks = Array.from(
+            anamnesisForm.querySelectorAll('input[name="condicao"]')
+        );
+        condicaoChecks.forEach(check => {
+            check.addEventListener('change', () => {
+                if (check.value === 'Nenhuma' && check.checked) {
+                    condicaoChecks.forEach(other => {
+                        if (other !== check) other.checked = false;
+                    });
+                } else if (check.checked) {
+                    const nenhuma = condicaoChecks.find(c => c.value === 'Nenhuma');
+                    if (nenhuma) nenhuma.checked = false;
+                }
+            });
+        });
+
+        const valor = (name) => {
+            const el = anamnesisForm.elements[name];
+            return el && el.value ? el.value.trim() : '';
+        };
+
+        anamnesisForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const condicoes = condicaoChecks
+                .filter(c => c.checked)
+                .map(c => c.value)
+                .join(', ') || 'Não informado';
+
+            const medicamentos = valor('medicamentos');
+            const medicamentosQuais = valor('medicamentosQuais');
+            const medicamentosTexto =
+                medicamentos === 'Sim' && medicamentosQuais
+                    ? `Sim — ${medicamentosQuais}`
+                    : medicamentos;
+
+            const linhas = [
+                '*ANAMNESE — IRONCOACH*',
+                '',
+                `*Nome:* ${valor('nome')}`,
+                `*Idade:* ${valor('idade')} anos`,
+                valor('altura') ? `*Altura:* ${valor('altura')} cm` : null,
+                valor('peso') ? `*Peso:* ${valor('peso')} kg` : null,
+                '',
+                `*Objetivo:* ${valor('objetivo')}`,
+                `*Nível de atividade:* ${valor('nivel')}`,
+                `*Experiência com treino:* ${valor('experiencia')}`,
+                `*Frequência semanal:* ${valor('frequencia')}`,
+                `*Local de treino:* ${valor('local')}`,
+                valor('equipamentos') ? `*Equipamentos:* ${valor('equipamentos')}` : null,
+                '',
+                `*Condições de saúde:* ${condicoes}`,
+                `*Medicamentos de uso contínuo:* ${medicamentosTexto}`,
+                valor('dores') ? `*Dores/limitações:* ${valor('dores')}` : null,
+                `*Horas de sono:* ${valor('sono')}`,
+                valor('restricoes') ? `*Restrições alimentares:* ${valor('restricoes')}` : null,
+                `*Fuma:* ${valor('fuma')}  |  *Álcool:* ${valor('alcool')}`,
+                valor('observacoes') ? `\n*Observações:* ${valor('observacoes')}` : null,
+            ].filter(linha => linha !== null);
+
+            const mensagem = linhas.join('\n');
+            const url = `https://wa.me/${WHATSAPP_ANAMNESE}?text=${encodeURIComponent(mensagem)}`;
+
+            // Feedback visual no botão enquanto o WhatsApp abre
+            const submitBtn = anamnesisForm.querySelector('.anamnesis__submit');
+            if (submitBtn) {
+                const original = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="ph ph-check-circle"></i> Abrindo o WhatsApp...';
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = original;
+                }, 2500);
+            }
+
+            window.open(url, '_blank');
+        });
+    }
+
     // ---------- Log para debug (opcional, remove em produção) ----------
     console.log('%c🔥 IRONCOACH LP %cCarregada com sucesso!',
         'font-size:18px; font-weight:bold; color:#C8FF00;',

@@ -100,6 +100,9 @@
                         <p class="method-card__desc">
                             Envio de fotos, medidas e histórico. Entendo seu biotipo, rotina e objetivo real.
                         </p>
+                        <a href="#anamnese" class="method-card__link">
+                            Preencher anamnese <i class="ph ph-arrow-right"></i>
+                        </a>
                     </div>
                     <!-- Passo 2 -->
                     <div class="method-card fade-up">
@@ -307,6 +310,190 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- ========== ANAMNESE ONLINE (FORMULÁRIO -> WHATSAPP) ========== -->
+        <section class="anamnesis" id="anamnese">
+            <div class="container">
+                <h2 class="section-title fade-up">
+                    <span class="section-title__accent">//</span> ANAMNESE ONLINE
+                </h2>
+                <p class="section-subtitle fade-up">
+                    Preencha sua ficha em <strong class="text--neon">2 minutos</strong> e envie direto para o nosso WhatsApp.
+                </p>
+
+                <form class="anamnesis__form fade-up" id="anamnesisForm">
+                    <!-- Dados básicos -->
+                    <fieldset class="anamnesis__fieldset">
+                        <legend class="anamnesis__legend">Dados básicos</legend>
+                        <div class="anamnesis__grid">
+                            <div class="field">
+                                <label class="field__label" for="ana-nome">Nome completo *</label>
+                                <input class="field__input" type="text" id="ana-nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-idade">Idade *</label>
+                                <input class="field__input" type="number" id="ana-idade" name="idade" placeholder="Ex.: 32" min="12" max="99" required>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-altura">Altura (cm)</label>
+                                <input class="field__input" type="number" id="ana-altura" name="altura" placeholder="Ex.: 175" min="100" max="250">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-peso">Peso (kg)</label>
+                                <input class="field__input" type="number" id="ana-peso" name="peso" placeholder="Ex.: 82" min="30" max="300" step="0.1">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Objetivo e rotina -->
+                    <fieldset class="anamnesis__fieldset">
+                        <legend class="anamnesis__legend">Objetivo e rotina</legend>
+                        <div class="anamnesis__grid">
+                            <div class="field">
+                                <label class="field__label" for="ana-objetivo">Objetivo principal *</label>
+                                <select class="field__input field__select" id="ana-objetivo" name="objetivo" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Perder peso</option>
+                                    <option>Ganhar massa muscular</option>
+                                    <option>Definição</option>
+                                    <option>Condicionamento físico</option>
+                                    <option>Saúde e qualidade de vida</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-nivel">Nível de atividade atual *</label>
+                                <select class="field__input field__select" id="ana-nivel" name="nivel" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Sedentário</option>
+                                    <option>Levemente ativo</option>
+                                    <option>Moderadamente ativo</option>
+                                    <option>Muito ativo</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-experiencia">Experiência com treino *</label>
+                                <select class="field__input field__select" id="ana-experiencia" name="experiencia" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Nunca treinei</option>
+                                    <option>Menos de 6 meses</option>
+                                    <option>6 meses a 2 anos</option>
+                                    <option>Mais de 2 anos</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-frequencia">Dias por semana para treinar *</label>
+                                <select class="field__input field__select" id="ana-frequencia" name="frequencia" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>1 a 2 dias</option>
+                                    <option>3 a 4 dias</option>
+                                    <option>5 a 6 dias</option>
+                                    <option>Todos os dias</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-local">Local de treino *</label>
+                                <select class="field__input field__select" id="ana-local" name="local" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Academia</option>
+                                    <option>Em casa</option>
+                                    <option>Ao ar livre</option>
+                                    <option>Academia + casa</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-equipamentos">Equipamentos disponíveis</label>
+                                <input class="field__input" type="text" id="ana-equipamentos" name="equipamentos" placeholder="Ex.: halteres, elásticos, barra fixa">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Saúde -->
+                    <fieldset class="anamnesis__fieldset">
+                        <legend class="anamnesis__legend">Saúde</legend>
+                        <div class="field">
+                            <span class="field__label">Condições de saúde (marque todas que se aplicam)</span>
+                            <div class="anamnesis__checks">
+                                <label class="check"><input type="checkbox" name="condicao" value="Nenhuma"> Nenhuma</label>
+                                <label class="check"><input type="checkbox" name="condicao" value="Problemas cardíacos"> Problemas cardíacos</label>
+                                <label class="check"><input type="checkbox" name="condicao" value="Pressão alta"> Pressão alta</label>
+                                <label class="check"><input type="checkbox" name="condicao" value="Diabetes"> Diabetes</label>
+                                <label class="check"><input type="checkbox" name="condicao" value="Lesão ortopédica"> Lesão ortopédica</label>
+                                <label class="check"><input type="checkbox" name="condicao" value="Cirurgia recente"> Cirurgia recente</label>
+                                <label class="check"><input type="checkbox" name="condicao" value="Problema respiratório"> Problema respiratório</label>
+                            </div>
+                        </div>
+                        <div class="anamnesis__grid">
+                            <div class="field">
+                                <label class="field__label" for="ana-medicamentos">Usa medicamentos de uso contínuo? *</label>
+                                <select class="field__input field__select" id="ana-medicamentos" name="medicamentos" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Não</option>
+                                    <option>Sim</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-medicamentos-qual">Quais medicamentos?</label>
+                                <input class="field__input" type="text" id="ana-medicamentos-qual" name="medicamentosQuais" placeholder="Ex.: Losartana 50mg">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-dores">Dores ou limitações</label>
+                                <input class="field__input" type="text" id="ana-dores" name="dores" placeholder="Ex.: dor no joelho direito">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-sono">Horas de sono por noite *</label>
+                                <select class="field__input field__select" id="ana-sono" name="sono" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Menos de 5 horas</option>
+                                    <option>5 a 6 horas</option>
+                                    <option>7 a 8 horas</option>
+                                    <option>Mais de 8 horas</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-restricoes">Restrições alimentares / alergias</label>
+                                <input class="field__input" type="text" id="ana-restricoes" name="restricoes" placeholder="Ex.: intolerância à lactose">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="ana-fuma">Você fuma? *</label>
+                                <select class="field__input field__select" id="ana-fuma" name="fuma" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Não</option>
+                                    <option>Sim</option>
+                                </select>
+                            </div>
+                            <div class="field field--full">
+                                <label class="field__label" for="ana-alcool">Consome álcool? *</label>
+                                <select class="field__input field__select" id="ana-alcool" name="alcool" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Não consumo</option>
+                                    <option>Socialmente</option>
+                                    <option>Frequentemente</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Observações -->
+                    <fieldset class="anamnesis__fieldset">
+                        <legend class="anamnesis__legend">Observações</legend>
+                        <div class="field">
+                            <label class="field__label" for="ana-obs">Algo mais que devemos saber?</label>
+                            <textarea class="field__input" id="ana-obs" name="observacoes" rows="4" placeholder="Metas, histórico de treino, preferências, rotina..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="anamnesis__footer">
+                        <button type="submit" class="btn btn--giant btn--neon anamnesis__submit">
+                            <i class="ph ph-whatsapp-logo"></i> Enviar Anamnese pelo WhatsApp
+                        </button>
+                        <p class="anamnesis__note">
+                            <i class="ph ph-lock-simple"></i>
+                            Ao enviar, o WhatsApp abre com a sua ficha já preenchida. Seus dados vão direto para o treinador.
+                        </p>
+                    </div>
+                </form>
             </div>
         </section>
 

@@ -1163,3 +1163,208 @@ ul {
         font-size: 38px;
     }
 }
+
+/* ============================================================
+   ANAMNESE ONLINE (FORMULÁRIO -> WHATSAPP)
+   ============================================================ */
+.anamnesis {
+    background-color: var(--bg-secondary);
+    padding: 90px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.anamnesis__form {
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.anamnesis__fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.anamnesis__legend {
+    width: 100%;
+    font-family: var(--font-title);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--neon-yellow);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.anamnesis__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field--full {
+    grid-column: 1 / -1;
+}
+
+.field__label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.field__input {
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 13px 16px;
+    outline: none;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.field__input::placeholder {
+    color: var(--text-muted);
+}
+
+.field__input:focus {
+    border-color: var(--neon-yellow);
+    box-shadow: 0 0 0 3px rgba(200, 255, 0, 0.12);
+}
+
+.field__select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23777777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 14px;
+    padding-right: 44px;
+    cursor: pointer;
+}
+
+textarea.field__input {
+    resize: vertical;
+    min-height: 110px;
+    line-height: 1.5;
+}
+
+.anamnesis__checks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 16px;
+    margin-top: 4px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-primary);
+    cursor: pointer;
+    transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.check:hover {
+    border-color: #3a3a3a;
+    color: var(--text-primary);
+}
+
+.check input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--neon-yellow);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.anamnesis__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.anamnesis__submit {
+    max-width: 520px;
+}
+
+.anamnesis__submit:disabled {
+    opacity: 0.75;
+    cursor: wait;
+    transform: none;
+}
+
+.anamnesis__note {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 540px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.anamnesis__note i {
+    color: var(--neon-yellow);
+    font-size: 15px;
+}
+
+/* Link do Passo 01 -> anamnese */
+.method-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--neon-yellow);
+    transition: gap var(--transition-fast), color var(--transition-fast);
+}
+
+.method-card__link:hover {
+    gap: 10px;
+    color: var(--white);
+}
+
+/* Responsivo do formulário */
+@media (max-width: 768px) {
+    .anamnesis {
+        padding: 64px 0;
+    }
+
+    .anamnesis__form {
+        padding: 24px 18px;
+        gap: 26px;
+    }
+
+    .anamnesis__grid,
+    .anamnesis__checks {
+        grid-template-columns: 1fr;
+    }
+}
