@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FixLab — Assistência Técnica para Celulares e Notebooks</title>
   <meta name="description" content="Conserto de celulares, notebooks e tablets com diagnóstico gratuito, peças de qualidade e garantia de 90 dias. Orçamento rápido pelo WhatsApp.">
-  <meta name="theme-color" content="#0b0f14">
-  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%236ea8ff"/><g fill="none" stroke="%2306101f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 12) scale(1.66)"><path d="M14.7 6.3a4.5 4.5 0 0 0-5.9 5.9L3 18l3 3 5.8-5.8a4.5 4.5 0 0 0 5.9-5.9l-2.6 2.6-2.1-2.1 2.7-2.5Z"/></g></svg>'>
+  <meta name="theme-color" content="#f3f0e9">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="%23e4542c"/><g fill="none" stroke="%231b1a17" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 12) scale(1.66)"><path d="M14.7 6.3a4.5 4.5 0 0 0-5.9 5.9L3 18l3 3 5.8-5.8a4.5 4.5 0 0 0 5.9-5.9l-2.6 2.6-2.1-2.1 2.7-2.5Z"/></g></svg>'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -50,7 +50,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Assistência técnica especializada</span>
+          <span class="eyebrow">Assistência técnica · São Paulo</span>
           <h1>Conserto especializado para o que você usa <span class="text-accent">todos os dias</span>.</h1>
           <p>Celulares, notebooks e tablets com diagnóstico preciso, peças de qualidade e garantia de 90 dias. Orçamento gratuito em minutos.</p>
           <div class="hero-actions">
@@ -71,42 +71,24 @@
         </div>
 
         <div class="hero-visual">
-          <div class="hero-panel">
-            <div class="hero-panel-head">
-              <span class="hero-panel-title">
-                <svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-chip"/></svg>
-                Diagnóstico em andamento
-              </span>
-              <span class="hero-panel-status">ao vivo</span>
+          <div class="ticket" aria-hidden="true">
+            <div class="ticket__head">
+              <span class="mono-label">Ordem de serviço</span>
+              <span class="ticket__num">Nº 0042</span>
             </div>
-            <div class="hero-diag">
-              <div class="diag-row">
-                <svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-smartphone"/></svg>
-                <span>Teste de tela e touch</span>
-                <span class="diag-tag">ok</span>
-              </div>
-              <div class="diag-row">
-                <svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-battery"/></svg>
-                <span>Saúde da bateria</span>
-                <span class="diag-tag diag-tag--warn">82%</span>
-              </div>
-              <div class="diag-row">
-                <svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-chip"/></svg>
-                <span>Placa-mãe</span>
-                <span class="diag-tag">ok</span>
-              </div>
-              <div class="diag-row">
-                <svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-plug"/></svg>
-                <span>Conector de carga</span>
-                <span class="diag-tag diag-tag--warn">revisar</span>
-              </div>
-            </div>
-            <div class="hero-panel-foot">
-              <span>Previsão de entrega <strong>hoje, 17h</strong></span>
-              <span>Orçamento: <strong>grátis</strong></span>
+            <span class="ticket__stamp">Orçamento<br>grátis</span>
+            <dl class="ticket__rows">
+              <div><dt>Aparelho</dt><dd>Celular · Samsung</dd></div>
+              <div><dt>Defeito</dt><dd>Tela trincada + bateria</dd></div>
+              <div><dt>Status</dt><dd><span class="tag tag--accent">Em análise</span></dd></div>
+              <div><dt>Previsão</dt><dd>Hoje, 17h</dd></div>
+              <div><dt>Garantia</dt><dd>90 dias</dd></div>
+            </dl>
+            <div class="ticket__foot">
+              <span class="mono-label">FixLab · Assistência Técnica</span>
+              <span class="ticket__sign">Assinado</span>
             </div>
           </div>
-          <span class="hero-float"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-shield"/></svg> Garantia de 90 dias</span>
         </div>
       </div>
     </section>
@@ -165,7 +147,7 @@
     <section class="section" id="orcamento" aria-labelledby="quote-title">
       <div class="container">
         <div class="section-head section-head--center" data-reveal>
-          <span class="eyebrow">Orçamento express</span>
+          <span class="eyebrow">Ordem de serviço</span>
           <h2 id="quote-title">Descubra o custo do reparo em 1 minuto.</h2>
           <p>Escolha o aparelho, a marca e o problema. No final, envie tudo pronto pelo WhatsApp.</p>
         </div>
@@ -270,7 +252,7 @@
           <aside class="quote-summary" aria-live="polite">
             <div class="quote-summary-title">
               <svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-wrench"/></svg>
-              Resumo do pedido
+              Resumo da OS
             </div>
             <div class="summary-list">
               <div class="summary-row"><span>Aparelho</span><strong id="sum-device" class="is-empty">—</strong></div>
