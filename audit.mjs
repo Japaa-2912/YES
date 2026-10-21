@@ -59,6 +59,7 @@ const PAGES = [
   '/clinica-estetica/index.html',
   '/studio-de-cabelo/index.html',
   '/veterinaria/index.html',
+  '/assistencia-tecnica/index.html',
 ];
 
 const VIEWPORTS = [
@@ -434,7 +435,7 @@ async function main() {
   const filters = await checkFilters(browser);
   log(`total de cards: ${filters.total}`);
   log(`filtro 'Beleza' -> ${filters.beleza} visiveis (esperado 3): ${filters.beleza === 3 ? 'OK' : 'FALHA'}`);
-  log(`filtro 'Todas' -> ${filters.todas} visiveis (esperado 10): ${filters.todas === 10 ? 'OK' : 'FALHA'}`);
+  log(`filtro 'Todas' -> ${filters.todas} visiveis (esperado 11): ${filters.todas === 11 ? 'OK' : 'FALHA'}`);
 
   log('\n=== 5. CTAs de planos (WhatsApp) ===');
   const plans = await checkPlanCtas(browser);
